@@ -1,12 +1,12 @@
 /* 테마색 d7d7d7 머리색1 */
-:root {
+/*:root {
   --main-color: #d7d7d7;
   --light-grey: #e5e5e5;
   --background-color: #ffe3dd;
   --text-color:#4C4646;
   --text-color-on-main-color: #fff;
   --light-yellow: #ffda59;
-}
+}*/
 
 body, html {
     height: auto!important;
@@ -21,7 +21,10 @@ body > header:nth-child(1) {
 
 /*헤더 로고 교체*/
 header .row>div:nth-child(1)>a {
-  /*background: url(https://sogether.github.io/tgd/images/logo_pink.png) no-repeat*/
+  display: block;
+  width: 145px;
+  height: 50px;
+  background: url(https://raw.githubusercontent.com/heesoo-glenn/nhungether/master/src/images/nhungether-logo.png) no-repeat;
 }
 /*기존 헤더 로고 안보이게*/
 header .row>div:nth-child(1)>a img {
@@ -35,7 +38,7 @@ header > div.container > div.row {
 
 /*검색 input*/
 header #right-search-form>input[type=text] {
-  border: 3px solid var(--main-color)
+  border: 3px solid #d7d7d7;
 }
 /*검색 돋보기*/
 header #right-search-form>#right-search-btn {
@@ -44,12 +47,12 @@ header #right-search-form>#right-search-btn {
 
 /*상단 bar*/
 header #header-bar>.row {
-  border-top: 5px solid var(--main-color);
+  border-top: 5px solid #d7d7d7;
   border-radius: 5px;
 }
 /*상단 bar 광고*/
 header #header-bar #header-top-notice strong.notice-badge {
-  background: var(--main-color)
+  background: #d7d7d7
 }
 
 /*==========header end ==========*/
@@ -57,8 +60,8 @@ header #header-bar #header-top-notice strong.notice-badge {
 /*==========left menu start ==========*/
 /*좌측 메뉴 헤더*/
 #main .menu-wrapper > .header {
-  background-color: var(--main-color);
-  color: var(--text-color-on-main-color);
+  background-color: #d7d7d7;
+  color: #fff;
   border-radius: 5px 5px 0px 0px;
 }
 
@@ -68,17 +71,17 @@ header #header-bar #header-top-notice strong.notice-badge {
 }
 /*좌측 메뉴 숏컷 이니셜*/
 #main .menu-wrapper>a>em, .pagination>li>a, .pagination>li>span {
-  color: var(--main-color);
+  color: #d7d7d7;
 }
 /*좌측메뉴 트위치 스케쥴*/
 #main .menu-wrapper>.header>a {
-  color: var(--text-color-on-main-color);
+  color: #fff;
 }
 
 /*==========left menu end ==========*/
 /*========== baord start ==========*/
 #main #main-content>div.frame, #main .menu-wrapper {
-  background: var(--background-color);
+  background: #ffe3dd;
 }
 /*========== baord end ==========*/
 /*========== baord info start ==========*/
@@ -101,7 +104,7 @@ header #header-bar #header-top-notice strong.notice-badge {
 /*스트리머 프로필 이미지*/
 #board-info #board-info-profile-img {
     border-radius: 50%;
-    border: 3px solid var(--main-color);
+    border: 3px solid #d7d7d7;
     float: left!important;
     margin-right: 10px;
     margin-top: -14px;
@@ -111,11 +114,11 @@ header #header-bar #header-top-notice strong.notice-badge {
 }
 /*스트리머 이름*/
 #board-info #board-info-bottom a, #board-info #viewers-area, #board-info h1>a, #main .menu-wrapper>a {
-    color: var(--text-color);
+    color: #4C4646;
 }
 /*스트리머 순위*/
 .badge {
-  background: var(--main-color);
+  background: #d7d7d7;
 }
 /*시청자 수*/
 #board-info #viewers-area {
@@ -150,20 +153,20 @@ header #header-bar #header-top-notice strong.notice-badge {
 }
 /*게시판 상단 (홈 카테고리 ...)*/
 #article-list #article-list-category {
-    border-top: 3px solid var(--main-color);
-    background: var(--main-color);
+    border-top: 3px solid #d7d7d7;
+    background: #d7d7d7;
     border-radius: 6px 6px 0 0;
     margin-top: 10px;
 }
 /*게시판 상단 홈링크*/
 #article-info, #article-list #article-list-category>a.active, #article-list #article-list-category>a:hover, h3 {
-    background: var(--main-color);
+    background: #d7d7d7;
 }
 /*게시판 상단 카테고리*/
 #article-list #article-list-category>a {
     display: inline-block;
     padding: 11px 16px;
-    background: var(--main-color);
+    background: #d7d7d7;
     text-decoration: none;
     font-size: 12px;
     font-weight: 700;
@@ -176,7 +179,7 @@ header #header-bar #header-top-notice strong.notice-badge {
 }
 /*게시글 readcount*/
 #article-list>.article-list-row>.item>.list-header>span {
-  background: var(--main-color);
+  background: #d7d7d7;
 }
 /*게시글 제목*/
 #article-list>.article-list-row>.item>.list-title>a {
@@ -185,8 +188,8 @@ header #header-bar #header-top-notice strong.notice-badge {
 
 /*게시판 인기글 버튼*/
 #article-list #article-list-menu>.btn.best, .btn-outline-success {
-    border-color: var(--main-color);
-    color: var(--main-color);
+    border-color: #d7d7d7;
+    color: #d7d7d7;
 }
 /*게시판 인기글 버튼 위치*/
 #article-list #article-list-menu>.btn.best {
@@ -194,12 +197,12 @@ header #header-bar #header-top-notice strong.notice-badge {
 }
 /*게시판 글쓰기 버튼*/
 .btn-primary {
-    background: var(--main-color);
+    background: #d7d7d7;
     border-color: #fff;
 }
 /*게시판 글쓰기 버튼 pusedo*/
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-    background-color: var(--main-color)!important;
+    background-color: #d7d7d7!important;
     border: none;
 }
 /*게시판 글쓰기 버튼 위치*/
@@ -209,12 +212,12 @@ header #header-bar #header-top-notice strong.notice-badge {
 
 /*게시판 페이지 넘버*/
 .pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
-  background-color: var(--main-color);
-    border-color: var(--main-color);
+  background-color: #d7d7d7;
+    border-color: #d7d7d7;
 }
 /*게시판 페이지 넘버 hover*/
 .pagination>li>a:hover {
-    background-color: var(--light-grey);
+    background-color: #e5e5e5;
     color: #fff;
 }
 
@@ -242,7 +245,7 @@ header #header-bar #header-top-notice strong.notice-badge {
 }
 /*공지*/
 #article-list>.article-list-row.notice {
-    background-color: var(--light-yellow);
+    background-color: #ffda59;
 }
 /*게시글 제목 영역*/
 #article-info>h2 {
@@ -253,8 +256,9 @@ header #header-bar #header-top-notice strong.notice-badge {
 
 /*게시글 헤더*/
 #article-content-wrapper>.header {
-    border-top: 3px solid var(--main-color);
-    background: .5em 1em .5em 1em var(--green);
+    border-top: 3px solid #d7d7d7;
+    background: .5em 1em .5em 1em;
+    background-color: #ffe3dd;
 }
 /*게시글 하단 버튼 영역*/
 #article-content-wrapper>.vote-area, #article-reply-area #reply-best-area .reply>.reply-content, #article-reply-area #reply-real-area .reply>.reply-content {
