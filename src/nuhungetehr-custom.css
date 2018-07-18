@@ -257,7 +257,6 @@ header #header-bar #header-top-notice strong.notice-badge {
 /*게시글 헤더*/
 #article-content-wrapper>.header {
     border-top: 3px solid #d7d7d7;
-    background: .5em 1em .5em 1em;
     background-color: #ffe3dd;
 }
 /*게시글 하단 버튼 영역*/
