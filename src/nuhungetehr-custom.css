@@ -1,0 +1,279 @@
+/* 테마색 d7d7d7 머리색1 */
+:root {
+  --main-color: #d7d7d7;
+  --light-grey: #e5e5e5;
+  --background-color: #ffe3dd;
+  --text-color:#4C4646;
+  --text-color-on-main-color: #fff;
+  --light-yellow: #ffda59;
+}
+
+body, html {
+    height: auto!important;
+    background: linear-gradient(to bottom,#ffeae4,#fec0b8);
+}
+
+/*==========header start ==========*/
+/*헤더*/
+body > header:nth-child(1) {
+
+}
+
+/*헤더 로고 교체*/
+header .row>div:nth-child(1)>a {
+  /*background: url(https://sogether.github.io/tgd/images/logo_pink.png) no-repeat*/
+}
+/*기존 헤더 로고 안보이게*/
+header .row>div:nth-child(1)>a img {
+  opacity: 0;
+}
+
+/*트게더 로고 있는 부분 = 이미지 넣기 ex)늉댕늉청*/
+header > div.container > div.row {
+  /*background-color: black;*/
+}
+
+/*검색 input*/
+header #right-search-form>input[type=text] {
+  border: 3px solid var(--main-color)
+}
+/*검색 돋보기*/
+header #right-search-form>#right-search-btn {
+
+}
+
+/*상단 bar*/
+header #header-bar>.row {
+  border-top: 5px solid var(--main-color);
+  border-radius: 5px;
+}
+/*상단 bar 광고*/
+header #header-bar #header-top-notice strong.notice-badge {
+  background: var(--main-color)
+}
+
+/*==========header end ==========*/
+
+/*==========left menu start ==========*/
+/*좌측 메뉴 헤더*/
+#main .menu-wrapper > .header {
+  background-color: var(--main-color);
+  color: var(--text-color-on-main-color);
+  border-radius: 5px 5px 0px 0px;
+}
+
+/*좌축 메뉴 숏컷 사이 공백*/
+#main .menu-wrapper .spacer {
+  background: #efefef;
+}
+/*좌측 메뉴 숏컷 이니셜*/
+#main .menu-wrapper>a>em, .pagination>li>a, .pagination>li>span {
+  color: var(--main-color);
+}
+/*좌측메뉴 트위치 스케쥴*/
+#main .menu-wrapper>.header>a {
+  color: var(--text-color-on-main-color);
+}
+
+/*==========left menu end ==========*/
+/*========== baord start ==========*/
+#main #main-content>div.frame, #main .menu-wrapper {
+  background: var(--background-color);
+}
+/*========== baord end ==========*/
+/*========== baord info start ==========*/
+/*게시판 상단 board info*/
+#board-info {
+    display: flex;
+    border-right: 0;
+    border-radius: 6px;
+    overflow: inherit;
+    padding: 0.5em 1em;
+    background: #fff;
+    height: 44px;
+}
+/**/
+#board-info h1 {
+    font-size: 18px;
+    border-bottom: 0;
+}
+
+/*스트리머 프로필 이미지*/
+#board-info #board-info-profile-img {
+    border-radius: 50%;
+    border: 3px solid var(--main-color);
+    float: left!important;
+    margin-right: 10px;
+    margin-top: -14px;
+    height: 60px;
+    width: 60px;
+    background-color: #fff;
+}
+/*스트리머 이름*/
+#board-info #board-info-bottom a, #board-info #viewers-area, #board-info h1>a, #main .menu-wrapper>a {
+    color: var(--text-color);
+}
+/*스트리머 순위*/
+.badge {
+  background: var(--main-color);
+}
+/*시청자 수*/
+#board-info #viewers-area {
+    padding: 5px;
+}
+/*시청자 수 텍스트*/
+#board-info #viewers-area #viewers:before {
+    content: "늉늉 레이드 중 ";
+    cursor: text;
+}
+/*기능버튼 묶음*/
+#board-info #board-info-bottom {
+    padding: 0;
+    flex: auto;
+    text-align: right;
+}
+/*기능버튼*/
+#board-info #board-info-bottom a {
+    display: inline-block;
+    padding: 10px 10px 10px 20px;
+    border: 0;
+}
+/*========== baord info end ==========*/
+
+/*========== ==========*/
+/*게시판*/
+#article-list {
+    margin: 0;
+    padding: 0 0 2em;
+    background: #fff;
+    border-radius: 6px;
+}
+/*게시판 상단 (홈 카테고리 ...)*/
+#article-list #article-list-category {
+    border-top: 3px solid var(--main-color);
+    background: var(--main-color);
+    border-radius: 6px 6px 0 0;
+    margin-top: 10px;
+}
+/*게시판 상단 홈링크*/
+#article-info, #article-list #article-list-category>a.active, #article-list #article-list-category>a:hover, h3 {
+    background: var(--main-color);
+}
+/*게시판 상단 카테고리*/
+#article-list #article-list-category>a {
+    display: inline-block;
+    padding: 11px 16px;
+    background: var(--main-color);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff!important;
+    border-radius: 6px 6px 0 0;
+}
+/*게시글 경계선 없애기*/
+#article-list>.article-list-row, #article-list>.article-list-row>.item>.list-blocked, #article-list>.article-list-row>.item>.list-category, #article-list>.article-list-row>.item>.list-checkbox, #article-list>.article-list-row>.item>.list-header, #article-list>.article-list-row>.item>.list-time, #article-list>.article-list-row>.item>.list-title {
+    border: 0;
+}
+/*게시글 readcount*/
+#article-list>.article-list-row>.item>.list-header>span {
+  background: var(--main-color);
+}
+/*게시글 제목*/
+#article-list>.article-list-row>.item>.list-title>a {
+  font-size: 14px;
+}
+
+/*게시판 인기글 버튼*/
+#article-list #article-list-menu>.btn.best, .btn-outline-success {
+    border-color: var(--main-color);
+    color: var(--main-color);
+}
+/*게시판 인기글 버튼 위치*/
+#article-list #article-list-menu>.btn.best {
+    margin-left: 1em;
+}
+/*게시판 글쓰기 버튼*/
+.btn-primary {
+    background: var(--main-color);
+    border-color: #fff;
+}
+/*게시판 글쓰기 버튼 pusedo*/
+.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+    background-color: var(--main-color)!important;
+    border: none;
+}
+/*게시판 글쓰기 버튼 위치*/
+#article-list #article-list-menu>.btn.write {
+    margin-right: 1em;
+}
+
+/*게시판 페이지 넘버*/
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+  background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+/*게시판 페이지 넘버 hover*/
+.pagination>li>a:hover {
+    background-color: var(--light-grey);
+    color: #fff;
+}
+
+
+/*%%%%%%%detail%%%%%%%%%*/
+/*게시글 바탕*/
+#article-content-wrapper #article-content {
+    border: 0;
+    background: #fff;
+    padding: 1em 1.5em;
+}
+#main #main-content>div.frame, #main .menu-wrapper {
+    border-right: 0;
+    border-bottom: 0;
+    border-radius: 6px;
+    background: 0 0;
+}
+
+/*게시글 info (제목 등)*/
+#article-info {
+    width: 848.66px;
+    margin: 10px auto 0;
+    border-radius: 6px 6px 0 0;
+    padding: .5em 1em;
+}
+/*공지*/
+#article-list>.article-list-row.notice {
+    background-color: var(--light-yellow);
+}
+/*게시글 제목 영역*/
+#article-info>h2 {
+  margin-top: 3px;
+  margin-bottom: 3px;
+  font-weight: 700;
+}
+
+/*게시글 헤더*/
+#article-content-wrapper>.header {
+    border-top: 3px solid var(--main-color);
+    background: .5em 1em .5em 1em var(--green);
+}
+/*게시글 하단 버튼 영역*/
+#article-content-wrapper>.vote-area, #article-reply-area #reply-best-area .reply>.reply-content, #article-reply-area #reply-real-area .reply>.reply-content {
+    border: 0;
+    background: #fff;
+}
+/*게시글 footer*/
+#article-content-wrapper>.footer {
+    background: #fff;
+}
+
+/*댓글 영역*/
+#article-reply-area {
+    margin: 0 auto;
+    background: #fff;
+    width: 848.66px;
+    border-radius: 6px 6px 0 0;
+}
+/*댓글 달기 영역 하단 공백 추가*/
+#comment-write-form-area {
+    padding: 0 1em 0.5em;
+}
